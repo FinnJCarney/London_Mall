@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class ShootTeleProjectile : MonoBehaviour
-{  
+{
     public string[] tags; //a public array of tags that are valid targets for the projectile teleportation, leave blank to make it discrete;
-
+    public string[] nonValidTags;//
     public int maxRange = 128; //the maximum range visualized by the arc
     int layerMask = 1 << 9;
 
@@ -109,7 +109,7 @@ public class ShootTeleProjectile : MonoBehaviour
             {
                 Debug.DrawLine(trajPoints[ii], trajPoints[ii - 1]);
             }
-            if (Physics.Raycast(pos, vel.normalized, out RaycastHit trajHit))
+            if (Physics.Raycast(pos, vel.normalized, out RaycastHit trajHit) && !trajHit.collider.isTrigger)
             {
                 if (lastDist < trajHit.distance)
                 {
