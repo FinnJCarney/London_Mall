@@ -29,7 +29,7 @@ public class TeleProjectileScript : MonoBehaviour
         transform.forward = moveDirection;
         transform.position += moveDirection * speed * Time.fixedDeltaTime;
 
-        if (Physics.Raycast(transform.position, moveDirection.normalized, out RaycastHit hit)) //detects if the projectile has hit something in front of it, then teleports player, and allows them to shoot again
+        if (Physics.Raycast(transform.position, moveDirection.normalized, out RaycastHit hit) && !hit.collider.isTrigger) //detects if the projectile has hit something in front of it, then teleports player, and allows them to shoot again
         {
             detected = true; // shows if the projectile has ever detected a collider, so that if it suddenly doesnt any longer, it will destroy itself, as it has passes through a collider in this case.
             if (hit.distance <= transform.localScale.x / 2) // if hitting a wall within the radius of the projectile, teleport and destroy
@@ -89,6 +89,14 @@ public class TeleProjectileScript : MonoBehaviour
         if (playerReference.GetComponent<ShootTeleProjectile>().tags.Length == 0) // if list is empty, all surfaces are valid
         {
             validSurface = true;
+        }
+
+        foreach (string s in playerReference.GetComponent<ShootTeleProjectile>().nonValidTags) //check to see if the tag you hit is a valid target
+        {
+            if (hitTag == s)
+            {
+                validSurface = false;
+            }
         }
 
         if (validSurface)
