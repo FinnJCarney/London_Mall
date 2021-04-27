@@ -522,12 +522,12 @@ MonoBehaviour:
     m_OverrideState: 1
     m_Value: {x: 1, y: 0.99895453, z: 0.59083605, w: 0.032467537}
   shadowsStart:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: 0
     min: 0
   shadowsEnd:
-    m_OverrideState: 0
-    m_Value: 0.3
+    m_OverrideState: 1
+    m_Value: 0.39
     min: 0
   highlightsStart:
     m_OverrideState: 1
