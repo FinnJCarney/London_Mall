@@ -68,7 +68,11 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
+<<<<<<< HEAD
     maxTextureSize: 4096
+=======
+    maxTextureSize: 1024
+>>>>>>> fc7b4a24e6ddd8169af313716c21967c7082c8d0
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -80,7 +84,11 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
+<<<<<<< HEAD
     maxTextureSize: 4096
+=======
+    maxTextureSize: 1024
+>>>>>>> fc7b4a24e6ddd8169af313716c21967c7082c8d0
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -92,7 +100,11 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: iPhone
+<<<<<<< HEAD
     maxTextureSize: 4096
+=======
+    maxTextureSize: 1024
+>>>>>>> fc7b4a24e6ddd8169af313716c21967c7082c8d0
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -104,7 +116,11 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
+<<<<<<< HEAD
     maxTextureSize: 4096
+=======
+    maxTextureSize: 1024
+>>>>>>> fc7b4a24e6ddd8169af313716c21967c7082c8d0
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -116,7 +132,11 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: WebGL
+<<<<<<< HEAD
     maxTextureSize: 4096
+=======
+    maxTextureSize: 1024
+>>>>>>> fc7b4a24e6ddd8169af313716c21967c7082c8d0
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1

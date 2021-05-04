@@ -8,10 +8,16 @@ EditorBuildSettings:
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
+<<<<<<< HEAD
   - enabled: 0
     path: Assets/Scenes/LevelDesignMidterm.unity
     guid: 30016ccc617db4f4bad7f5682fb5658f
   - enabled: 1
     path: Assets/Scenes/LevelDesignMidterm_Finn.unity
     guid: 6db6bae484faff044ae11c6152cd1403
+=======
+  - enabled: 1
+    path: Assets/Scenes/LevelDesignFinal.unity
+    guid: 10d425eba61bd0943ab6a07ad1b6e8c5
+>>>>>>> fc7b4a24e6ddd8169af313716c21967c7082c8d0
   m_configObjects: {}
